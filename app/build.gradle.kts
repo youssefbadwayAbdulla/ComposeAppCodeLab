@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.composeapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.composeapp"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -50,7 +50,9 @@ android {
 }
 
 dependencies {
+    val compose_version = "1.5.0"
 
+    implementation ("androidx.compose.material:material-icons-extended:$compose_version")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.activity:activity-compose:1.7.0")
